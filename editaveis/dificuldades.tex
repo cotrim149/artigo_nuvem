@@ -1,1 +1,22 @@
 \section{Dificuldades}
+
+Este artigo foi feito baseado na atividade de refazer o experimento no artigo \cite{elaine_et_al:14} utilizando de outra tecnologia que não fosse usada no artigo alvo. O artigo alvo usa a ferramenta \textit{CloudSim}. Já o experimento de replicação está usando o \textit{Eucalyptus}. Este experimento foi feito para a matéria de Computação em Nuvem da Faculdade do Gama.
+
+Baseado neste fato, alguns problemas relacionados a esta adaptação foram encontrados.
+
+\begin{enumerate}
+
+  \item Simulação de máquinas virtuais
+  \begin{itemize}
+    \item Problema: O Eucalyptus não faz simulação, somente a virtualização de ambiente como nuvem.
+    \item Solução: Utilização de máquinas virtuais.
+  \end{itemize}
+
+  \item Simulação da quantidade requerida de máquinas virtuais
+  \begin{itemize}
+    \item Problema: O computador utilizado como Nó de controle\footnote{Node Controller} para o Eucalyptus, não tem poder computacional para virtualização da quantidade mínima de máquinas requerida pelo artigo alvo.
+    \item Solução: Utilização de uma quantidade mínima para simulação
+  \end{itemize}
+
+
+\end{enumerate}
